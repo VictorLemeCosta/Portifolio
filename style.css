@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background-color: #fcfcfc;
+    width: auto;
+    width: 100%;
+}
+
+header {
+    background-color: #f1f3f7;
+    height: 120px;
+}
+
+header img {
+    height: 90px;
+    margin-top: 15px;
+}
+
+.head {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-lado-lado {
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-burguer {
+    display: none;
+}
+
+.head a {
+    color: #d81d74;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 8px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0px 8px;
+}
+
+.head a:hover {
+    color: #fff;
+    background-color: #d81d74;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+.head .language-pt:hover {
+    background-image: url('./assets/brasil.png');
+    background-size: contain;
+    background-position: 50%;
+    color: #f1f3f7;
+    background-color: #f1f3f7;
+    text-decoration: none;
+}
+
+.head .language-en:hover {
+    background-image: url('./assets/reino-unido.png');
+    background-size: contain;
+    background-position: 50%;
+    color: #f1f3f7;
+    background-color: #f1f3f7;
+    text-decoration: none;
+}
+
+.main-content {
+    height: 850px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    gap: 20px;
+}
+
+.main-content h1 {
+    font-size: 50px;
+    color: #5d576b;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main-content h1 span {
+    color: #d81d74;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.descricao {
+    font-size: 18px;
+    width: 1050px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detalhes-sobre-mim {
+    display: flex;
+    margin: 50px auto 0 auto;
+    width: 1050px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info {
+    width: 400px;
+    text-align: left;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.divisao {
+    width: 1px;
+    height: 150px;
+    background-color: #d81d74;
+}
+
+.contato {
+    width: 50%;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 50px;
+    background-color: 1px solid red;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-content a:hover {
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.welcome img {
+    height: 20px;
+    margin-left: 10px;
+}
+
+.welcome {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-content span {
+    color: #5d576b;
+    font-weight: 400;
+    font-size: 45px;
+}
+
+.main-content h3 {
+    font-size: 35px;
+}
+
+.social-icons {
+    width: 40px;
+    height: 190px;
+    margin: 0px auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #f1f3f7;
+    position: fixed;
+    top: 50%;
+    left: 0px;
+}
+
+.social-icon {
+    height: 30px;
+}
+
+.social-icon:hover {
+    background-color: #d81d74;
+    cursor: pointer;
+}
+
+.projects-section {
+    width: 100%;
+    background-color: #f1f3f7;
+}
+
+.projects-section h2 {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: 550;
+    font-size: 40px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    color: #5d576b;
+}
+
+.projects {
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.projects h3 {
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #5d576b
+}
+
+.card {
+    height: 250px;
+    width: 220px;
+    background-color: #fafafa;
+    border: 1px solid #000;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #353434;
+    display: flex;
+    justify-content: center;
+}
+
+.card:hover {
+    border: 2px solid #d81d74;
+    box-shadow: 10px 10px 10px #d81d74;
+    cursor: pointer;
+}
+
+.card1 a{
+    display: block;
+    background-image: url("./assets/projeto1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height:250px;
+    padding-left:0px;
+    padding-top:10px;
+    width:200px;
+    color: #eaeaea;
+}
+
+.card3 a{
+    display: block;
+    background-image: url("./assets/projeto2.ico");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height:250px;
+    padding-left:0px;
+    padding-top:10px;
+    width:200px;
+    color: #eaeaea;
+}
+
+.card2 a{
+    display: block;
+    background-image: url("./assets/projeto3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height:250px;
+    padding-left:0px;
+    padding-top:10px;
+    width:200px;
+    color: #eaeaea;
+}
+
+.card4 a{
+    display: block;
+    background-image: url("./assets/projeto-em-breve.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height:250px;
+    padding-left:0px;
+    padding-top:10px;
+    width:200px;
+    color: #eaeaea;
+}
+
+.card5 a{
+    display: block;
+    background-image: url("./assets/projeto-em-breve.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height:250px;
+    padding-left:0px;
+    padding-top:10px;
+    width:200px;
+    color: #eaeaea;
+}
+
+.card6 a{
+    display: block;
+    background-image: url("./assets/projeto-em-breve.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    height:250px;
+    padding-left:0px;
+    padding-top:10px;
+    width:200px;
+    color: #eaeaea;
+}
+
+.footer {
+    height: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+@media screen and (max-width:1180px) {
+    .info {
+        text-align: center;
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .divisao {
+        display: none;
+    }
+
+    .contato {
+        line-height: 15px;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:652px) {
+    .info {
+        font-size: 15px;
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .contato {
+        text-align: justify;
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (max-width:558px) {
+    .head {
+        position: relative;
+    }
+    
+    .menu-lado-lado {
+        display: none;
+        width: 100px;
+    }
+    
+    .menu-lado-lado a{
+        padding: 3px;
+        height: 28px;
+        font-size: 15px;
+    }
+
+    .botao1 {
+        position: absolute;
+        top: 5px;
+        right: 60px;
+    }
+
+    .botao2 {
+        position: absolute;
+        top: 40px;
+        right: 60px;
+    }
+
+    .language-en {
+        position: absolute;
+        top: 75px;
+        right: 60px;
+    }
+
+    .language-en:hover {
+        background-color: #d81d74;
+        color: #f1f3f7;
+        background-image: none;
+    }
+
+    .menu-burguer {
+        display: inline;
+        color: #d81d74;
+        height: 70px;
+        width: 60px;
+        border-radius: 5px;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .menu-burguer:hover {
+        cursor: pointer;
+        background-color: #bcbac2;
+    }
+
+    .main-content {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .main-content {
+        height: 1000px;
+    }
+
+    .welcome {
+        width: 100%
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .contato {
+        font-size: 13px;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    .social-icons {
+        opacity: 20%;
+    }
+
+    .social-icon {
+        height: 20px;
+    }
+}

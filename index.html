@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="curriculum" content="Victor Leme Costa, Currículo Victor Leme Costa, CV Victor, vlc">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Portfolio - Victor Leme Costa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <header>
+        <div class="head">
+            <img src="./assets/profile-pic.png">
+            <div class="menu-lado-lado" id="itens">
+                <a href="#sobre-mim">About me</a>
+                <a href="#projetos">Projects</a>
+                <a href="./index-pt.html" class="language-pt">PT</a>
+            </div>
+            <div class="menu-burguer">
+                <i class="material-icons"  onclick="clickMenu()">menu</i>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="welcome" id="sobre-mim">
+            <h1>Hi! My name is <span>Victor Leme Costa</span></h1>
+            <p class="descricao">25 years old Front-end developer diving into this world of technology in search of knowledge and new learning.</p>
+            <div class="detalhes-sobre-mim">
+                <div class="info">Recently graduated in Systems Analysis and Development from UniFecaf. I am open to receiving job offers where I can learn, grow and achieve my goals.</div>
+                <div class="divisao"></div>
+                <div class="contato">
+                    <p>Living in <a href="https://goo.gl/maps/YDWe5SwZ5AVigcSA7" target="_blank">Taboão da Serra-SP</a><img src="./assets/gps.png"></p>
+                    <p>Contact phone: <a href="+5511947461301" target="_blank">+55 (11) 94746-1301</a> <img src="./assets/whatsapp-logo.png"></p>
+                    <p>Email: <a href="mailto:vleme37@gmail.com" target="_blank">vleme37@gmail.com</a> <img src="./assets/gmail.png"></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/victor-costa-62816114a/" target="_blank"><img class="social-icon" src="./assets/linkedin-logo-escuro.png" alt="linkedin-logo"></i></a>
+            <a href="https://github.com/VictorLemeCosta" target="_blank"><img class="social-icon" src="./assets/github-logo-escuro.png" alt="github-logo"></i></a>
+            <a href="https://twitter.com/vlemec" target="_blank"><img class="social-icon" src="./assets/twitter-logo-escuro.png" alt="twitter-logo"></i></a>
+            <a href="https://www.facebook.com/vlemec/" target="_blank"><img class="social-icon" src="./assets/facebook-logo-escuro.png" alt="facebook-logo"></i></a>
+            <a href="https://www.instagram.com/vlemec/" target="_blank"><img class="social-icon" src="./assets/instagram-logo-escuro.png" alt="instagram-logo"></i></a>
+        </div>
+    </div>
+    <div class="projects-section" id="projetos">
+        <div>
+            <h2>Projects</h2>
+        </div>
+        <div class="projects">
+            <div>
+                <h3>AlfaTech</h3>
+                <div class="card card1">
+                    <a href="https://victorlemecosta.github.io/AlfaTech/" target="_blank"></a>
+                </div>
+            </div>
+            <div>
+                <h3>ADF Peniel</h3>
+                <div class="card card2">
+                    <a href="https://victorlemecosta.github.io/peniel_adf/" target="_blank"></a>
+                </div>
+            </div>
+            <div>
+                <h3>ManhattanCoffee</h3>
+                <div class="card card3">
+                    <a href="https://victorlemecosta.github.io/ManhattanCoffe/" target="_blank"></a>
+                </div>
+            </div>
+            <div>
+                <h3>SOON</h3>
+                <div class="card card4">
+                    <a href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div>
+                <h3>SOON</h3>
+                <div class="card card5">
+                    <a href="#" target="_blank"></a>
+                </div>
+            </div>
+            <!-- <div>
+                    <h3>SOON</h3>
+                    <div class="card card6">
+                        <a href="#" target="_blank"></a>
+                </div>
+                </div> -->
+        </div>
+    </div>
+    <div class="footer">
+        Copyright &copy; 2023
+    </div>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
