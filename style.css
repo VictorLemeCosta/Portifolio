@@ -14,6 +14,10 @@ body {
 header {
     background-color: #f1f3f7;
     height: 120px;
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
 }
 
 header img {
@@ -84,7 +88,7 @@ header img {
 
 .main-content {
     width: 100%;
-    margin: 0px auto;
+    margin: 50px auto 0 auto;
     padding: 0 30px;
     text-align: center;
     display: flex;

@@ -14,12 +14,12 @@ document.querySelector('#btnClose').addEventListener('click', e => {
     toggleMenu();
 })
 
-document.querySelector('#ocultar').addEventListener('click', e => {
+document.querySelector('#botao1').addEventListener('click', e => {
     open = false;
     toggleMenu();
 })
 
-document.querySelector('#oculta').addEventListener('click', e => {
+document.querySelector('#botao2').addEventListener('click', e => {
     open = false;
     toggleMenu();
 })
@@ -40,8 +40,8 @@ window.onscroll = function() {
 };
       
 function scrollFunction() {
-    if (document.body.scrollTop > 55 ||
-        document.documentElement.scrollTop > 55)
+    if (document.body.scrollTop > 40 ||
+        document.documentElement.scrollTop > 40)
     {
         document.getElementById("nav").style.height = "60px";
               
@@ -50,6 +50,12 @@ function scrollFunction() {
         document.getElementById("logo").style.marginTop = "10px";
 
         document.getElementById("sobre-mim").style.marginTop = "100px";
+
+        document.getElementById("nav").style.transition = ".5s";
+
+        document.getElementById("logo").style.transition = ".5s";
+
+        document.getElementById("sobre-mim").style.transition = ".5s";
     } 
     else {
         document.getElementById("nav").style.height = "120px";
