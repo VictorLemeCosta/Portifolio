@@ -20,7 +20,7 @@ header {
         width: 100%;
 }
 
-header img {
+#logo {
     height: 90px;
     margin-top: 15px;
 }
@@ -44,7 +44,7 @@ header img {
     display: none;
 }
 
-.head a {
+.botao {
     color: #d81d74;
     text-decoration: none;
     font-weight: 500;
@@ -56,10 +56,10 @@ header img {
     margin: 0px 8px;
 }
 
-.head a:hover {
+.botao:hover {
     color: #f1f3f7;
     background-color: #d81d74;
-    border: 1px solid #fff;
+    border: 0px solid #fff;
     text-decoration-line: underline;
     cursor: pointer;
 }
@@ -193,7 +193,7 @@ header img {
     background-color: #f1f3f7;
     position: fixed;
     top: 50%;
-    left: 0px;
+    left: 5px;
 }
 
 .social-icon {
@@ -382,22 +382,9 @@ header img {
         width: 100%;
     }
 
-    .size-large {
-        height: 120px;
-    }
-
-    .size-small {
-        height: 60px;
-    }
-
-    .size-small img {
-        height: 40px;
-        margin-top: 10px;
-    }
-
     .menu-lado-lado {
-        width: 100%;
-        height: 300px;
+        width: 60%;
+        height: 667px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -406,8 +393,37 @@ header img {
         top: 0;
         right: -558px;
         background-color: rgb(223, 226, 231, .95);
-        border-bottom-left-radius: 10%;
         border: 0px solid #d81d74;
+    }
+
+    @media screen and (max-height: 720px) and (min-height: 668px) {
+        .menu-lado-lado {
+            height: 720px;
+        }
+    }
+
+    @media screen and (max-height: 740px) and (min-height: 721px) {
+        .menu-lado-lado {
+            height: 740px;
+        }
+    }
+
+    @media screen and (max-height: 812px) and (min-height: 741px) {
+        .menu-lado-lado {
+            height: 812px;
+        }
+    }
+
+    @media screen and (max-height: 900px) and (min-height: 813px) {
+        .menu-lado-lado {
+            height: 900px;
+        }
+    }
+
+    @media screen and (max-height: 950px) and (min-height: 901px) {
+        .menu-lado-lado {
+            height: 950px;
+        }
     }
     
     .menu-lado-lado a{
@@ -496,7 +512,7 @@ header img {
 
     .main-content {
         text-align: left;
-        margin-top: 80px;
+        margin-top: 120px;
     }
 
     .main-content h1 {
@@ -506,6 +522,22 @@ header img {
 
     .descricao {
         margin: 0px auto 50px auto;
+    }
+
+    .social-icons {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        width: 140px;
+        height: 35px;
+        margin: 0px auto;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #f1f3f7;
+    }
+
+    .social-icon {
+        height: 20px;
     }
 }
 
@@ -526,13 +558,5 @@ header img {
         font-size: 13px;
         width: 100%;
         margin: 30px auto;
-    }
-
-    .social-icons {
-        opacity: 20%;
-    }
-
-    .social-icon {
-        height: 20px;
     }
 }
