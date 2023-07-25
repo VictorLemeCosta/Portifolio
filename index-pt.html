@@ -13,29 +13,34 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
-    <header>
+    <header id="nav">
         <div class="head">
-            <img src="./assets/profile-pic.png">
-            <div class="menu-lado-lado" id="itens">
-                <a href="#sobre-mim" class="botao1">Sobre mim</a>
-                <a href="#projetos" class="botao2">Projetos</a>
-                <a href="./index.html" class="language-en">EN</a>
+            <img src="./assets/profile-pic.png" id="logo">
+            <div>
+                <nav class="menu-lado-lado btnEffect" id="menu">
+                    <div>
+                        <button id="btnClose">X</button>
+                    </div>
+                    <a id="ocultar" href="#sobre-mim" class="botao1">Sobre mim</a>
+                    <a id="oculta" href="#projetos" class="botao2">Projetos</a>
+                    <a href="./index.html" class="language-en">EN</a>
+                </nav>
             </div>
             <div class="menu-burguer">
-                <i class="material-icons" onclick="clickMenu()">menu</i>
+                <i class="material-icons" id="btnMenu">menu</i>
             </div>
         </div>
     </header>
-    <div class="main-content">
+    <div class="main-content" id="main-content">
         <div class="welcome" id="sobre-mim">
             <h1>Olá! Meu nome é <span>Victor Leme Costa</span></h1>
-            <p class="descricao">Jovem desenvolvedor Front-end de 25 anos mergulhando nesse mundo da tecnolgia em busca de conhecimento e novos aprendizados.</p>
+            <p class="descricao">Jovem desenvolvedor Front-end de 25 anos mergulhando nesse mundo da tecnologia em busca de conhecimento e novos aprendizados.</p>
             <div class="detalhes-sobre-mim">
                 <div class="info">Recém formado em Análise e Desenvolvimento de Sistemas pela UniFecaf. Estou aberto para receber propostas de emprego onde for possível aprender, crescer e atingir meus objetivos.</div>
                 <div class="divisao"></div>
                 <div class="contato">
                     <p>Moro em <a href="https://goo.gl/maps/YDWe5SwZ5AVigcSA7" target="_blank">Taboão da Serra-SP</a><img src="./assets/gps.png"></p>
-                    <p>Telefone de contato: <a href="+5511947461301" target="_blank">+55 (11) 94746-1301</a> <img src="./assets/whatsapp-logo.png"></p>
+                    <p>Telefone de contato: <a href="tel:+5511947461301" target="_blank">+55 (11) 94746-1301</a> <img src="./assets/whatsapp-logo.png"></p>
                     <p>Email: <a href="mailto:vleme37@gmail.com" target="_blank">vleme37@gmail.com</a> <img src="./assets/gmail.png"></p>
                 </div>
             </div>
@@ -94,14 +99,6 @@
     <div class="footer">
         Copyright &copy; 2023
     </div>
-    <script>
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+    <script src="./script.js"></script>
 </body>
 </html>
