@@ -28,10 +28,12 @@ function toggleMenu() {
     if (open) {
         /*Abre o menu vertical*/
         document.querySelector('#menu').style.marginRight = `${menuSize}`;
+        document.querySelector('body').style.overflow = 'hidden';
         return;
     }
     /*Fecha o menu vertical*/
     document.querySelector('#menu').style.marginRight = 0;
+    document.querySelector('body').style.overflow = 'auto';
 }
 
 
