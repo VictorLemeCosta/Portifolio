@@ -275,7 +275,7 @@ header {
 
 .card1 a{
     display: block;
-    background-image: url("./assets/projeto1.png");
+    background-image: url("./assets/novo-leao-logo-e-titulo.PNG");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -301,7 +301,7 @@ header {
 
 .card2 a{
     display: block;
-    background-image: url("./assets/novo-leao-logo-e-titulo.PNG");
+    background-image: url("./assets/projeto1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
