@@ -301,7 +301,7 @@ header {
 
 .card2 a{
     display: block;
-    background-image: url("./assets/projeto1.png");
+    background-image: url("./assets/logo\ e\ nome\ cor\ preto.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -314,7 +314,7 @@ header {
 
 .card4 a{
     display: block;
-    background-image: url("./assets/projeto-em-breve.png");
+    background-image: url("./assets/projeto1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
