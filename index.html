@@ -14,33 +14,38 @@
 </head>
 <body>
     <header id="nav">
-        <div class="head">
-            <img src="./assets/profile-pic.png" id="logo">
-            <div>
-                <nav class="menu-lado-lado btnEffect" id="menu">
-                    <div>
-                        <button id="btnClose">X</button>
-                    </div>
-                    <a id="botao1" href="#sobre-mim" class="botao1 botao">About me</a>
-                    <a id="botao2" href="#projetos" class="botao2 botao">Projects</a>
-                    <a id="language" href="./index-pt.html" class="language-pt botao">PT</a>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/victor-costa-62816114a/" target="_blank"><img class="social-icon" src="./assets/linkedin-logo-escuro.png" alt="linkedin-logo"></i></a>
-                        <a href="https://github.com/VictorLemeCosta" target="_blank"><img class="social-icon" src="./assets/github-logo-escuro.png" alt="github-logo"></i></a>
-                        <a href="https://twitter.com/vlemec" target="_blank"><img class="social-icon" src="./assets/twitter-logo-escuro.png" alt="twitter-logo"></i></a>
-                        <a href="https://www.facebook.com/vlemec/" target="_blank"><img class="social-icon" src="./assets/facebook-logo-escuro.png" alt="facebook-logo"></i></a>
-                        <a href="https://www.instagram.com/vlemec/" target="_blank"><img class="social-icon" src="./assets/instagram-logo-escuro.png" alt="instagram-logo"></i></a>
-                    </div>
-                </nav>
-            </div>
-            <div class="menu-burguer">
-                <i class="material-icons" id="btnMenu">menu</i>
+        <div class="header-overlay">
+            <div class="head">
+                <img src="./assets/Linkedin profile pic-Photoroom.png" id="logo">
+                <div>
+                    <nav class="menu-lado-lado btnEffect" id="menu">
+                        <div>
+                            <button id="btnClose">X</button>
+                        </div>
+                        <a id="botao1" href="#sobre-mim" class="botao1 botao">About me</a>
+                        <a id="botao2" href="#projetos" class="botao2 botao">Projects</a>
+                        <a id="language" href="./index-pt.html" class="language-pt botao">PT</a>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/victor-costa-62816114a/" target="_blank"><img class="social-icon" src="./assets/linkedin-logo-escuro.png" alt="linkedin-logo"></i></a>
+                            <a href="https://github.com/VictorLemeCosta" target="_blank"><img class="social-icon" src="./assets/github-logo-escuro.png" alt="github-logo"></i></a>
+                            <a href="https://twitter.com/vlemec" target="_blank"><img class="social-icon" src="./assets/twitter-logo-escuro.png" alt="twitter-logo"></i></a>
+                            <a href="https://www.facebook.com/vlemec/" target="_blank"><img class="social-icon" src="./assets/facebook-logo-escuro.png" alt="facebook-logo"></i></a>
+                            <a href="https://www.instagram.com/vlemec/" target="_blank"><img class="social-icon" src="./assets/instagram-logo-escuro.png" alt="instagram-logo"></i></a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="menu-burguer">
+                    <i class="material-icons" id="btnMenu">menu</i>
+                </div>
             </div>
         </div>
     </header>
     <div class="main-content" id="main-content">
         <div class="welcome" id="sobre-mim">
-            <h1>Hello! My name is <span>Victor Leme Costa</span></h1>
+            <div class="text-decoration">
+                <span class="linha-atras-da-palavra"></span>
+                <h1><span>Victor Leme Costa</span></h1>
+            </div>
             <p class="descricao">25 years old Front-end developer diving into this world of technology in search of knowledge and new learning.</p>
             <div class="detalhes-sobre-mim">
                 <div class="info">Recently graduated in Systems Analysis and Development from UniFecaf. I am open to receiving job offers where I can learn, grow and achieve my goals.</div>
@@ -61,46 +66,48 @@
         </div>
     </div>
     <div class="projects-section" id="projetos">
-        <div>
-            <h2>Projects</h2>
-        </div>
-        <div class="projects">
+        <div class="overlay">
             <div>
-                <h3>ADF Peniel</h3>
-                <div class="card card1">
-                    <a href="https://victorlemecosta.github.io/peniel_adf/" target="_blank"></a>
-                </div>
+                <h2>Projects</h2>
             </div>
-            <div>
-                <h3>Llama Peruvian Food</h3>
-                <div class="card card2">
-                    <a href="https://victorlemecosta.github.io/LlamaPeruvianHouse/" target="_blank"></a>
+            <div class="projects">
+                <div>
+                    <h3>ADF Peniel</h3>
+                    <div class="card card1">
+                        <a href="https://victorlemecosta.github.io/peniel_adf/" target="_blank"></a>
+                    </div>
                 </div>
+                <div>
+                    <h3>Sul EPI</h3>
+                    <div class="card card2">
+                        <a href="https://sulepi.com/" target="_blank"></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Llama Peruvian Food</h3>
+                    <div class="card card3">
+                        <a href="https://victorlemecosta.github.io/LlamaPeruvianHouse/" target="_blank"></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>ManhattanCoffee</h3>
+                    <div class="card card4">
+                        <a href="https://victorlemecosta.github.io/ManhattanCoffe/" target="_blank"></a>
+                    </div>
+                </div>
+                <div>
+                    <h3>AlfaTech</h3>
+                    <div class="card card5">
+                        <a href="https://victorlemecosta.github.io/AlfaTech/" target="_blank"></a>
+                    </div>
+                </div>
+                <!-- <div>
+                        <h3>SOON</h3>
+                        <div class="card card6">
+                            <a href="#" target="_blank"></a>
+                    </div>
+                    </div> -->
             </div>
-            <div>
-                <h3>ManhattanCoffee</h3>
-                <div class="card card3">
-                    <a href="https://victorlemecosta.github.io/ManhattanCoffe/" target="_blank"></a>
-                </div>
-            </div>
-            <div>
-                <h3>AlfaTech</h3>
-                <div class="card card4">
-                    <a href="https://victorlemecosta.github.io/AlfaTech/" target="_blank"></a>
-                </div>
-            </div>
-            <div>
-                <h3>SOON</h3>
-                <div class="card card5">
-                    <a href="#" target="_blank"></a>
-                </div>
-            </div>
-            <!-- <div>
-                    <h3>SOON</h3>
-                    <div class="card card6">
-                        <a href="#" target="_blank"></a>
-                </div>
-                </div> -->
         </div>
     </div>
     <div class="footer">

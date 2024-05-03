@@ -2,22 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Chocolates', Poppins, sans-serif;
 }
 
-body {
-    background-color: #fcfcfc;
-    width: auto;
-    width: 100%;
+@font-face {
+    font-family: 'Chocolates';
+    src: url("./fonts/TT Chocolates Trial Light.otf");
 }
 
 header {
-    background-color: #f1f3f7;
+    background-image: url("./assets/background manchado.png");
     height: 120px;
     position: fixed;
         top: 0;
         left: 0;
         width: 100%;
+    z-index: 2;
+}
+
+.header-overlay {
+    height: 100%;
+    background-color: rgb(14, 7, 6, .75);
 }
 
 #logo {
@@ -45,32 +50,34 @@ header {
 }
 
 .botao {
-    color: #d81d74;
+    color: #E2FF6E;
     text-decoration: none;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     padding: 5px 8px;
-    background-color: #fff;
-    border-radius: 15px;
-    border: 1px solid #d81d74;
+    background-color: #c5c5c5;
     margin: 0px 8px;
+    text-transform: uppercase;
 }
 
 .botao:hover {
-    color: #f1f3f7;
-    background-color: #d81d74;
+    color: #363130;
+    background-color: #E2FF6E;
     border: 0px solid #fff;
     text-decoration-line: underline;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .head .language-pt:hover {
     background-image: url('./assets/brasil.png');
     background-size: contain;
     background-position: 50%;
-    color: #f1f3f7;
-    background-color: #f1f3f7;
+    color: #363130;
+    background-color: #363130;
     text-decoration: none;
+    border-radius: 65%;
+    transition: 0.1s;
 }
 
 .head .language-en:hover {
@@ -78,17 +85,26 @@ header {
     background-size: contain;
     background-position: 50%;
     color: #f1f3f7;
-    background-color: #f1f3f7;
+    background-color: #363130;
     text-decoration: none;
+    border-radius: 65%;
+    transition: 0.1s;
 }
 
 #btnClose {
     display: none;
 }
 
+body {
+    background-color: #fcfcfc;
+    width: auto;
+    width: 100%;
+    background-image: url("./assets/background manchado.png");
+}
+
 .main-content {
     width: 100%;
-    margin: 50px auto 0 auto;
+    margin: 120px auto 0 auto;
     padding: 0 30px;
     text-align: center;
     display: flex;
@@ -102,23 +118,40 @@ header {
 .main-content h1 {
     font-size: 50px;
     color: #5d576b;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 50px;
     margin-top: 100px;
 }
 
+.text-decoration {
+    position: relative;
+}
+
+.linha-atras-da-palavra {
+    position: absolute;
+    top: 59%;
+    right: 0;
+    width: 448px;
+    height: 10px; /* Ajuste conforme necessário */
+    background-color: #E2FF6E; /* Cor da linha */
+    z-index: -1;
+  }
+
 .main-content h1 span {
-    color: #d81d74;
+    color: #363130;
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: 'Chocolates';
+    text-transform: uppercase;
 }
 
 .descricao {
-    font-size: 18px;
+    font-size: 25px;
     width: 1050px;
     margin: 0px auto 150px auto;
     display: flex;
     flex-wrap: wrap;
+    font-weight: 700;
 }
 
 .detalhes-sobre-mim {
@@ -128,10 +161,12 @@ header {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    font-weight: 700;
 }
 
 .info {
     width: 400px;
+    height: 150px;
     text-align: left;
     font-size: 18px;
     margin-right: 20px;
@@ -140,7 +175,7 @@ header {
 .divisao {
     width: 1px;
     height: 150px;
-    background-color: #d81d74;
+    background-color: #363130;
 }
 
 .contato {
@@ -149,17 +184,19 @@ header {
     margin-left: 20px;
     margin-bottom: 150px;
     line-height: 50px;
-    background-color: 1px solid red;
 }
 
 .main-content a {
     text-decoration: none;
     color: #000;
+    font-weight: 700;
 }
 
 .main-content a:hover {
-    font-weight: bolder;
+    font-weight: 900;
     cursor: pointer;
+    color: #E2FF6E;
+    background-color: #363130;
 }
 
 .welcome img {
@@ -172,12 +209,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.main-content span {
-    color: #5d576b;
-    font-weight: 400;
-    font-size: 45px;
 }
 
 .main-content h3 {
@@ -203,7 +234,7 @@ header {
 
 .social-icons {
     width: 40px;
-    height: 190px;
+    height: 180px;
     margin: 0px auto;
     padding: 5px;
     border-radius: 10px;
@@ -218,24 +249,29 @@ header {
 }
 
 .social-icon:hover {
-    background-color: #d81d74;
+    background-color: #E2FF6E;
     cursor: pointer;
 }
 
 .projects-section {
     width: 100%;
-    background-color: #f1f3f7;
+    background-image: url("./assets/background manchado.png");
+}
+
+.overlay {
+    background-color: rgb(14, 7, 6, .8);
 }
 
 .projects-section h2 {
     width: 70%;
     margin: 20px auto;
     text-align: center;
-    font-weight: 550;
+    font-weight: 400;
     font-size: 40px;
     padding-top: 60px;
     padding-bottom: 50px;
-    color: #5d576b;
+    text-transform: uppercase;
+    color: #E2FF6E;
 }
 
 .projects {
@@ -253,23 +289,22 @@ header {
     font-weight: 500;
     text-align: center;
     padding-bottom: 15px;
-    color: #5d576b
+    color: #E2FF6E
 }
 
 .card {
     height: 250px;
     width: 220px;
     background-color: #fafafa;
-    border: 1px solid #000;
+    border: 1px solid #363130;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px #353434;
+    box-shadow: 5px 5px 10px #353434;
     display: flex;
     justify-content: center;
 }
 
 .card:hover {
-    border: 2px solid #d81d74;
-    box-shadow: 10px 10px 10px #d81d74;
+    box-shadow: 5px 5px 10px #E2FF6E;
     cursor: pointer;
 }
 
@@ -286,9 +321,9 @@ header {
     color: #eaeaea;
 }
 
-.card3 a{
+.card2 a{
     display: block;
-    background-image: url("./assets/projeto2.ico");
+    background-image: url("./assets/SulEPI.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -299,7 +334,7 @@ header {
     color: #eaeaea;
 }
 
-.card2 a{
+.card3 a{
     display: block;
     background-image: url("./assets/logo\ e\ nome\ cor\ preto.png");
     background-repeat: no-repeat;
@@ -314,7 +349,7 @@ header {
 
 .card4 a{
     display: block;
-    background-image: url("./assets/projeto1.png");
+    background-image: url("./assets/projeto2.ico");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -325,9 +360,10 @@ header {
     color: #eaeaea;
 }
 
+
 .card5 a{
     display: block;
-    background-image: url("./assets/projeto-em-breve.png");
+    background-image: url("./assets/projeto1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -377,6 +413,16 @@ header {
 }
 
 @media screen and (max-width:652px) {
+    .main-content h1 span {
+        font-size: 32px;
+    }
+
+    .linha-atras-da-palavra {
+        width: 288px;
+        height: 8px;
+        top: 61%;
+    }
+    
     .info {
         font-size: 15px;
         text-align: justify;
@@ -401,7 +447,7 @@ header {
 
     .menu-lado-lado {
         width: 100%;
-        height: 667px;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -409,13 +455,16 @@ header {
         position: absolute;
         top: 0;
         right: -558px;
-        background-color: rgb(223, 226, 231, .95);
-        border: 0px solid #d81d74;
+        background-color: rgb(223, 226, 231);
     }
 
     .welcome-social-ico {
         display: flex;
         margin-top: 20px;
+    }
+
+    .linha-atras-da-palavra {
+        top: 30%;
     }
 
     @media screen and (max-height: 720px) and (min-height: 668px) {
@@ -496,11 +545,11 @@ header {
 
     .menu-burguer {
         display: inline;
-        color: #d81d74;
+        color: #E2FF6E;
         border-radius: 48%;
         padding: 5px;
         height: 35px;
-        transition: background .7s;
+        transition: .7s;
     }
 
     .menu-burguer:hover {
@@ -514,17 +563,17 @@ header {
         top: 30px;
         right: 20%;
         padding: 3px;
-        background-color: #d81d74;
-        color: #f1f3f7;
+        background-color: #c5c5c5;
+        color: #E2FF6E;
         border-radius: 15%;
         width: 25px;
-        border: 1px solid #f1f3f7;
+        border: 1px solid #E2FF6E;
     }
 
     #btnClose:hover{
-        background-color: #f1f3f7;
-        color: #d81d74;
-        border: 1px solid #d81d74;
+        background-color: #E2FF6E;
+        color: #363130;
+        border: 1px solid #363130;
         cursor: pointer;
     }
 
@@ -560,6 +609,18 @@ header {
 
     .social-icon {
         height: 20px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .main-content h1 span {
+        font-size: 28px;
+    }
+    
+    .linha-atras-da-palavra {
+        width: 250px;
+        height: 6px;
+        top: 33%;
     }
 }
 

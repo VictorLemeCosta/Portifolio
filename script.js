@@ -58,6 +58,10 @@ function scrollFunction() {
         document.getElementById("logo").style.transition = ".5s";
 
         document.getElementById("sobre-mim").style.transition = ".5s";
+
+        document.getElementById("main-content").style.marginTop = "0px";
+
+        document.getElementById("main-content").style.transition = ".5s";
     } 
     else {
         document.getElementById("nav").style.height = "120px";
@@ -67,5 +71,9 @@ function scrollFunction() {
         document.getElementById("logo").style.marginTop = "15px";
 
         document.getElementById("sobre-mim").style.marginTop = "0px";
+
+        document.getElementById("main-content").style.marginTop = "120px";
+
+        document.getElementById("main-content").style.transition = ".5s";
     }
 }
